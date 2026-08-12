@@ -11,15 +11,15 @@
 }
 
 :root {
-    --colorOne: #f5f7fa;
-    --colorTwo: #4a6fa5;
-    --colorThree: #1f3c88;
-    --colorFour: #e63946;
-    --colorFive: #ffffff;
+    --colorOne: #f8f9fa;   /* gris muy claro */
+    --colorTwo: #adb5bd;   /* gris medio */
+    --colorThree: #343a40; /* gris oscuro */
+    --colorFour: #6c757d;  /* gris intermedio */
+    --colorFive: #ffffff;  /* blanco */
 }
 
 body {
-    background: linear-gradient(135deg, var(--colorOne), #e0eafc);
+    background: linear-gradient(135deg, var(--colorOne), #dee2e6);
     color: var(--colorThree);
 }
 
@@ -65,6 +65,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 section:nth-child(2n) {
@@ -72,7 +73,7 @@ section:nth-child(2n) {
 }
 
 .button-cv {
-    background: var(--colorFour);
+    background: var(--colorThree);
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     color: var(--colorFive);
@@ -99,9 +100,10 @@ section:nth-child(2n) {
     background: var(--colorThree);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem 0;
     box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
 .side-bar .name {
@@ -128,13 +130,14 @@ section:nth-child(2n) {
 
 .side-bar ul li a:hover,
 .nav-button.active {
-    background: var(--colorFour);
+    background: var(--colorTwo);
     border-radius: 8px;
 }
 
 .main-content {
     width: 100%;
     margin-left: 18rem;
+    transition: margin-left 0.3s ease;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -142,7 +145,7 @@ section:nth-child(2n) {
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-    background: var(--colorFour);
+    background: var(--colorTwo);
     border-radius: 5px;
 }
 
@@ -160,5 +163,49 @@ section:nth-child(2n) {
 
 .social-media a:hover {
     transform: scale(1.2);
-    color: var(--colorFour);
+    color: var(--colorTwo);
+}
+
+/* --- Menú hamburguesa --- */
+
+/* Estilo base del botón hamburguesa */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: var(--colorThree); /* gris oscuro por defecto */
+    cursor: pointer;
+    z-index: 1000;
+    transition: color 0.3s ease;
+}
+
+/* Cuando el menú está abierto */
+.hamburger.active {
+    color: var(--colorFive); /* blanco */
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .side-bar {
+        transform: translateX(-100%);
+    }
+
+    .side-bar.active {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    li {
+        margin: 1rem 0;
+    }
 }
