@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 * {
     margin: 0;
@@ -11,139 +11,154 @@
 }
 
 :root {
-    --colorOne: #D4D9B4;
-    --colortwo: #9DA65D;
-    --colorthree: #9AA641;
-    --colorfour: #BBBF34;
-    --colorfive: #F2F2F2;
+    --colorOne: #f5f7fa;
+    --colorTwo: #4a6fa5;
+    --colorThree: #1f3c88;
+    --colorFour: #e63946;
+    --colorFive: #ffffff;
 }
 
 body {
-    background-color: var(--colorOne);
+    background: linear-gradient(135deg, var(--colorOne), #e0eafc);
+    color: var(--colorThree);
 }
 
 h1, h2, h3, h4, h5, p {
-    color: var(--colortwo);
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+    line-height: 1.4;
 }
 
 h1 {
-    font-size: 5rem;
-    margin: 2rem 0;
+    font-size: 4rem;
+    color: var(--colorThree);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: var(--colorfive);
-    font-size: 4rem;
+    font-size: 3rem;
+    color: var(--colorFour);
 }
 
 h3 {
-    font-size: 3rem;
-}
-
-h4 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: var(--colorTwo);
 }
 
 p, a, li {
-    font-size: 1.5rem
+    font-size: 1.2rem;
+    color: var(--colorThree);
 }
 
-a{
-    color: var(--colorfive);
+a {
+    color: var(--colorFour);
+    transition: color 0.3s ease;
 }
 
-section:nth-child(2n) {
-    background-color: var(--colortwo);
+a:hover {
+    color: var(--colorTwo);
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4rem;
     scroll-snap-align: start;
-    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-child(2n) {
+    background: var(--colorFive);
 }
 
 .button-cv {
-    background: var(--colorfive);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    color: var(--colorfour);
+    background: var(--colorFour);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    color: var(--colorFive);
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.wrapper .side-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: fixed;
-    width: 18rem;
-    height: 100%;
-    background-color: var(--colorthree);
+.button-cv:hover {
+    background: var(--colorTwo);
+    transform: scale(1.05);
 }
 
 .wrapper {
     display: flex;
-    position: relative;
+    height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
 }
 
-.wrapper .side-bar .name {
-    color: #E4F2E7;
+.side-bar {
+    position: fixed;
+    width: 18rem;
+    height: 100%;
+    background: var(--colorThree);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.side-bar .name {
+    color: var(--colorFive);
     text-transform: uppercase;
     text-align: center;
-    margin: 2rem 0;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
-.wrapper .side-bar ul li {
-    height: 2rem;
-    width: 100%;
-    text-align: center;
+.side-bar ul li {
     height: 3rem;
     display: flex;
 }
 
-.wrapper .side-bar ul :hover {
-    background-color: var(--colorfour);
-}
-
-.nav-button.active {
-    background-color: var(--colorfour);
-}
-
-.nav-button {
-    font-size: 1.2rem;
-}
-
-.wrapper .side-bar ul li a {
-    color: #E4F2E7;
+.side-bar ul li a {
+    color: var(--colorFive);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: capitalize;
+    transition: background 0.3s ease;
+}
+
+.side-bar ul li a:hover,
+.nav-button.active {
+    background: var(--colorFour);
+    border-radius: 8px;
 }
 
 .main-content {
     width: 100%;
-    height: 100%;
     margin-left: 18rem;
 }
 
 .wrapper::-webkit-scrollbar {
     width: 10px;
-    scroll-behavior: smooth;
-    background-color: transparent;
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-    background-color: var(--colorfour);
+    background: var(--colorFour);
     border-radius: 5px;
 }
 
 .social-media {
     margin: 2rem 0;
-    width: 400px;
     display: flex;
     justify-content: space-around;
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    color: var(--colorFive);
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    color: var(--colorFour);
 }
