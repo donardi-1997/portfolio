@@ -186,7 +186,6 @@ section:nth-child(2n) {
     color: var(--colorFive); /* blanco */
 }
 
-
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .side-bar {
