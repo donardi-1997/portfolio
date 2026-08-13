@@ -181,10 +181,43 @@ section:nth-child(2n) {
     transition: color 0.3s ease;
 }
 
+/* seccion portafolio */
+
+#portfolio {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.portfolio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+
 /* Cuando el menú está abierto */
 .hamburger.active {
     color: var(--colorFive); /* blanco */
 }
+
+
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
