@@ -215,7 +215,7 @@ li {
 .btn {
     display: inline-block;
     background-color: #000;
-    color: #222;
+    color: #fff;
     padding: 12px 24px;
     border-radius: 6px;
     text-decoration: none;
@@ -225,6 +225,7 @@ li {
 
 .btn:hover {
     background-color: #fff;
+    color: #000;
     transform: scale(1.05);
 }
 
