@@ -11,11 +11,16 @@
 }
 
 :root {
-    --colorOne: #f8f9fa;   /* gris muy claro */
-    --colorTwo: #adb5bd;   /* gris medio */
-    --colorThree: #343a40; /* gris oscuro */
-    --colorFour: #6c757d;  /* gris intermedio */
-    --colorFive: #ffffff;  /* blanco */
+    --colorOne: #f8f9fa;
+    /* gris muy claro */
+    --colorTwo: #adb5bd;
+    /* gris medio */
+    --colorThree: #343a40;
+    /* gris oscuro */
+    --colorFour: #6c757d;
+    /* gris intermedio */
+    --colorFive: #ffffff;
+    /* blanco */
 }
 
 body {
@@ -23,7 +28,12 @@ body {
     color: var(--colorThree);
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 1.5rem 0;
     line-height: 1.4;
 }
@@ -31,7 +41,7 @@ h1, h2, h3, h4, h5, p {
 h1 {
     font-size: 4rem;
     color: var(--colorThree);
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -44,7 +54,9 @@ h3 {
     color: var(--colorTwo);
 }
 
-p, a, li {
+p,
+a,
+li {
     font-size: 1.2rem;
     color: var(--colorThree);
 }
@@ -70,6 +82,10 @@ section {
 
 section:nth-child(2n) {
     background: var(--colorFive);
+}
+
+li {
+    margin: 1rem 0;
 }
 
 .button-cv {
@@ -102,7 +118,7 @@ section:nth-child(2n) {
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem 0;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -175,7 +191,8 @@ section:nth-child(2n) {
     top: 1rem;
     left: 1rem;
     font-size: 2rem;
-    color: var(--colorThree); /* gris oscuro por defecto */
+    color: var(--colorThree);
+    /* gris oscuro por defecto */
     cursor: pointer;
     z-index: 1000;
     transition: color 0.3s ease;
@@ -184,37 +201,38 @@ section:nth-child(2n) {
 /* seccion portafolio */
 
 #portfolio {
-  text-align: center;
-  padding: 40px 0;
+    text-align: center;
+    padding: 40px 0;
 }
 
 .portfolio-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #000;
-  color: #222;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    background-color: #000;
+    color: #222;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #fff;
-  transform: scale(1.05);
+    background-color: #fff;
+    transform: scale(1.05);
 }
 
 
 /* Cuando el menú está abierto */
 .hamburger.active {
-    color: var(--colorFive); /* blanco */
+    color: var(--colorFive);
+    /* blanco */
 }
 
 
@@ -235,9 +253,5 @@ section:nth-child(2n) {
 
     .hamburger {
         display: block;
-    }
-
-    li {
-        margin: 1rem 0;
     }
 }
