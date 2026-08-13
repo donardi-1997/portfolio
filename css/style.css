@@ -198,7 +198,7 @@ section:nth-child(2n) {
 .btn {
   display: inline-block;
   background-color: #000;
-  color: #fff;
+  color: #222;
   padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
@@ -207,7 +207,7 @@ section:nth-child(2n) {
 }
 
 .btn:hover {
-  background-color: #222;
+  background-color: #fff;
   transform: scale(1.05);
 }
 
