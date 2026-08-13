@@ -101,6 +101,8 @@ li {
 .button-cv:hover {
     background: var(--colorTwo);
     transform: scale(1.05);
+    color: var(--colorThree);
+
 }
 
 .wrapper {
