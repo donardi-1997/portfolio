@@ -99,7 +99,7 @@ li {
 }
 
 .button-cv:hover {
-    background: var(--colorTwo);
+    background: var(--colorFive);
     transform: scale(1.05);
     color: var(--colorThree);
 
