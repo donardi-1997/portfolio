@@ -62,12 +62,54 @@
           Plataforma inteligente para análisis y evaluación de candidatos mediante Inteligencia Artificial
         </h3>
 
+
+        <!-- SHOWCASE MOBILE RESPONSIVE -->
+
+        <h3>Aplicación responsive desplegada en AWS</h3>
+
+        <p>
+          Capturas de la plataforma funcionando en dispositivos móviles,
+          demostrando diseño responsive y adaptación a diferentes tamaños de pantalla.
+        </p>
+
+
+        <div class="project-showcase">
+
+          <div class="mobile-preview">
+            <img src="images/ai-recruiter/mobile-login.png" alt="Login AI Recruiter Mobile">
+          </div>
+
+
+          <div class="mobile-preview">
+            <img src="images/ai-recruiter/mobile-dashboard.png" alt="Dashboard AI Recruiter Mobile">
+          </div>
+
+
+          <div class="mobile-preview">
+            <img src="images/ai-recruiter/mobile-ranking.png" alt="Ranking candidatos AI Recruiter Mobile">
+          </div>
+
+
+          <div class="mobile-preview">
+            <img src="images/ai-recruiter/mobile-evaluation.png" alt="Evaluación candidatos mediante IA Mobile">
+          </div>
+
+        </div>
+
+
+
         <p>
           🚀 Demo disponible:
-          <a href="https://ai.adrianguerra.net" target="_blank" class="button-cv">
-            Probar AI Recruiter
-          </a>
         </p>
+
+
+        <a href="https://ai.adrianguerra.net" target="_blank" class="button-cv">
+
+          Probar AI Recruiter
+
+        </a>
+
+
 
         <p>
           AI Recruiter es una plataforma desarrollada para automatizar procesos de
@@ -75,46 +117,61 @@
           arquitectura cloud y técnicas de Retrieval Augmented Generation (RAG).
         </p>
 
-        <p>
-          El proyecto permite analizar hojas de vida en formato PDF, extraer información
-          relevante de los candidatos y generar evaluaciones inteligentes comparando
-          sus habilidades, experiencia y conocimientos frente a los requisitos de una
-          vacante específica.
-        </p>
 
         <p>
-          La aplicación se encuentra desplegada en AWS utilizando una arquitectura
-          basada en contenedores, servicios administrados y buenas prácticas de
-          seguridad cloud.
+          El objetivo del proyecto es reducir el tiempo necesario para analizar hojas
+          de vida y encontrar candidatos adecuados para una vacante específica.
+
+          La plataforma permite cargar documentos PDF de candidatos, procesar su
+          información mediante modelos de lenguaje avanzados y generar evaluaciones
+          inteligentes basadas en los requisitos de cada posición.
         </p>
+
+
+        <p>
+          La aplicación está desplegada en AWS utilizando una arquitectura basada en
+          contenedores Docker, servicios administrados y buenas prácticas de seguridad
+          cloud.
+        </p>
+
 
 
         <h3>¿Cómo funciona?</h3>
 
-        <p>
-          El sistema recibe las hojas de vida de los candidatos y las almacena en una
-          arquitectura basada en servicios AWS. Los documentos son procesados mediante
-          técnicas de extracción de información, embeddings y búsqueda semántica para
-          construir una base de conocimiento inteligente.
-        </p>
 
         <p>
-          A diferencia de una búsqueda tradicional basada únicamente en palabras clave,
-          AI Recruiter utiliza modelos de lenguaje avanzados para comprender el contexto
-          del candidato, identificar experiencia profesional, habilidades técnicas,
-          certificaciones y generar coincidencias relevantes con una oferta laboral.
+          El sistema recibe las hojas de vida de los candidatos y almacena los
+          documentos utilizando servicios AWS.
+
+          Posteriormente, la información es procesada mediante extracción de datos,
+          embeddings y búsqueda semántica para construir una base de conocimiento
+          inteligente.
         </p>
+
+
+        <p>
+          A diferencia de una búsqueda tradicional basada únicamente en palabras
+          clave, AI Recruiter utiliza modelos de lenguaje avanzados para comprender
+          el contexto del candidato, identificar experiencia profesional, habilidades
+          técnicas, certificaciones y generar coincidencias relevantes con una oferta
+          laboral.
+        </p>
+
+
 
 
         <h3>Arquitectura del proyecto</h3>
 
+
         <ul>
+
 
           <li>
             <strong>Frontend:</strong>
             Aplicación web desarrollada con React para gestión de candidatos,
             visualización de rankings y consulta de resultados generados por IA.
           </li>
+
 
           <li>
             <strong>Backend:</strong>
@@ -123,11 +180,13 @@
             servicios de inteligencia artificial.
           </li>
 
+
           <li>
             <strong>Amazon Bedrock:</strong>
             Servicio utilizado para integrar modelos de lenguaje capaces de analizar
             documentos y generar evaluaciones inteligentes.
           </li>
+
 
           <li>
             <strong>Amazon Bedrock Knowledge Bases:</strong>
@@ -135,140 +194,146 @@
             para consultar información almacenada dentro de las hojas de vida.
           </li>
 
+
           <li>
             <strong>Amazon S3:</strong>
-            Almacenamiento de documentos, archivos del proyecto y recursos estáticos.
+            Almacenamiento seguro de documentos, archivos del proyecto y recursos
+            estáticos.
           </li>
+
 
           <li>
             <strong>AWS ECS Fargate:</strong>
-            Despliegue de aplicaciones mediante contenedores Docker sin administrar
-            servidores.
+            Despliegue del frontend y backend mediante contenedores Docker sin
+            administrar servidores.
           </li>
+
 
           <li>
             <strong>Application Load Balancer:</strong>
-            Distribución del tráfico hacia los servicios frontend y backend desplegados.
+            Distribución del tráfico hacia los servicios desplegados en AWS.
           </li>
+
 
           <li>
             <strong>Amazon Cognito:</strong>
             Gestión de autenticación mediante usuarios, tokens JWT y control de acceso.
           </li>
 
+
           <li>
-            <strong>CloudFront + Route 53 + ACM:</strong>
-            Configuración de dominio personalizado, HTTPS y certificados SSL para
-            publicación segura de la aplicación.
+            <strong>Route 53 + ACM:</strong>
+            Configuración de dominio personalizado, HTTPS y certificados SSL.
           </li>
+
 
         </ul>
 
 
+
+
         <h3>Funcionalidades principales</h3>
 
+
         <ul>
+
 
           <li>
             Carga y procesamiento automático de hojas de vida en formato PDF.
           </li>
 
+
           <li>
             Extracción inteligente de experiencia, habilidades y certificaciones.
           </li>
+
 
           <li>
             Consultas mediante lenguaje natural sobre información del candidato.
           </li>
 
+
           <li>
             Evaluación automática candidato-vacante utilizando Inteligencia Artificial.
           </li>
+
 
           <li>
             Generación de fortalezas, brechas técnicas y nivel de coincidencia.
           </li>
 
-          <li>
-            Ranking inteligente de candidatos según los requisitos del puesto.
-          </li>
 
           <li>
-            Visualización de resultados mediante una interfaz web interactiva.
+            Ranking inteligente de candidatos según requisitos del puesto.
           </li>
+
+
+          <li>
+            Interfaz web responsive accesible desde dispositivos móviles.
+          </li>
+
 
         </ul>
 
-        <h3>Demo de la aplicación</h3>
 
-        <p>
-          Algunas capturas de la plataforma desplegada en AWS:
-        </p>
 
-        <div class="project-images">
-
-          <img src="images/ai-recruiter/login.png" alt="Login AI Recruiter">
-
-          <img src="images/ai-recruiter/dashboard.png" alt="Dashboard AI Recruiter">
-
-          <img src="images/ai-recruiter/ranking.png" alt="Ranking de candidatos">
-
-          <img src="images/ai-recruiter/evaluation.png" alt="Evaluación de candidato con IA">
-
-        </div>
-
-        <p>
-          La aplicación se encuentra desplegada utilizando servicios AWS como
-          ECS Fargate, Application Load Balancer, Amazon Bedrock, Knowledge Bases,
-          S3 y Cognito.
-        </p>
-
-        <a href="https://ai.adrianguerra.net" target="_blank" class="button-cv">
-          🚀 Probar AI Recruiter
-        </a>
 
         <h3>Tecnologías utilizadas</h3>
+
 
         <p>
           Python, FastAPI, React, JavaScript, Docker, AWS ECS Fargate,
           Amazon Bedrock, Bedrock Knowledge Bases, Amazon S3, Cognito,
-          DynamoDB, Application Load Balancer, CloudFront, Route 53
-          y AWS Certificate Manager.
+          DynamoDB, Application Load Balancer, Route 53 y AWS Certificate Manager.
         </p>
 
 
+
+
+
         <h3>Arquitectura Cloud</h3>
+
 
         <p>
           La solución utiliza una arquitectura moderna basada en servicios cloud:
         </p>
 
+
         <ul>
 
-          <li>
-            Frontend React desplegado en contenedores AWS ECS.
-          </li>
 
           <li>
-            Backend FastAPI preparado para procesamiento de solicitudes mediante API REST.
+            Frontend React desplegado mediante contenedores AWS ECS Fargate.
           </li>
+
+
+          <li>
+            Backend FastAPI preparado para procesamiento mediante APIs REST.
+          </li>
+
 
           <li>
             Integración con modelos LLM mediante Amazon Bedrock.
           </li>
 
+
           <li>
-            Sistema RAG utilizando bases de conocimiento para recuperación semántica.
+            Sistema RAG utilizando Knowledge Bases para recuperación semántica.
           </li>
+
 
           <li>
             Comunicación segura mediante HTTPS y certificados administrados por AWS.
           </li>
 
+
         </ul>
 
 
+
+
         <h3>Impacto del proyecto</h3>
+
 
         <p>
           AI Recruiter demuestra la aplicación práctica de Inteligencia Artificial
@@ -276,23 +341,28 @@
           software tradicional con servicios cloud modernos.
         </p>
 
+
         <p>
           El proyecto integra conceptos actuales de la industria como arquitecturas
           basadas en contenedores, APIs REST, autenticación segura, búsqueda semántica,
           modelos de lenguaje y despliegue profesional en AWS.
         </p>
 
+
         <p>
           Esta solución representa una aproximación real a cómo las empresas pueden
-          utilizar Inteligencia Artificial para mejorar y acelerar procesos de
-          selección de talento.
+          utilizar Inteligencia Artificial para optimizar procesos de selección de
+          talento, reduciendo tiempos de análisis y mejorando la toma de decisiones.
         </p>
+
 
 
         <p>
           🔗 Acceso a la aplicación:
           <a href="https://ai.adrianguerra.net" target="_blank">
+
             ai.adrianguerra.net
+
           </a>
         </p>
 
