@@ -58,7 +58,16 @@
 
         <h2>AI Recruiter</h2>
 
-        <h3>Plataforma inteligente para análisis y evaluación de candidatos mediante Inteligencia Artificial</h3>
+        <h3>
+          Plataforma inteligente para análisis y evaluación de candidatos mediante Inteligencia Artificial
+        </h3>
+
+        <p>
+          🚀 Demo disponible:
+          <a href="https://ai.adrianguerra.net" target="_blank" class="button-cv">
+            Probar AI Recruiter
+          </a>
+        </p>
 
         <p>
           AI Recruiter es una plataforma desarrollada para automatizar procesos de
@@ -67,102 +76,113 @@
         </p>
 
         <p>
-          El objetivo del proyecto es reducir el tiempo necesario para analizar
-          hojas de vida y encontrar candidatos adecuados para una vacante específica.
-          La plataforma permite cargar documentos PDF de candidatos, procesar su
-          información utilizando modelos de lenguaje avanzados y generar evaluaciones
-          basadas en los requisitos de cada posición.
+          El proyecto permite analizar hojas de vida en formato PDF, extraer información
+          relevante de los candidatos y generar evaluaciones inteligentes comparando
+          sus habilidades, experiencia y conocimientos frente a los requisitos de una
+          vacante específica.
+        </p>
+
+        <p>
+          La aplicación se encuentra desplegada en AWS utilizando una arquitectura
+          basada en contenedores, servicios administrados y buenas prácticas de
+          seguridad cloud.
         </p>
 
 
         <h3>¿Cómo funciona?</h3>
 
         <p>
-          El sistema recibe las hojas de vida de los candidatos y las almacena en
-          una arquitectura basada en servicios AWS. Los documentos son procesados
-          mediante embeddings y almacenados en una base de conocimiento para
-          realizar búsquedas semánticas.
+          El sistema recibe las hojas de vida de los candidatos y las almacena en una
+          arquitectura basada en servicios AWS. Los documentos son procesados mediante
+          técnicas de extracción de información, embeddings y búsqueda semántica para
+          construir una base de conocimiento inteligente.
         </p>
 
         <p>
-          A diferencia de una búsqueda tradicional por palabras clave, AI Recruiter
-          utiliza inteligencia artificial para comprender el contexto del candidato,
-          identificando experiencia, habilidades técnicas, certificaciones y
-          coincidencias relevantes con una oferta laboral.
+          A diferencia de una búsqueda tradicional basada únicamente en palabras clave,
+          AI Recruiter utiliza modelos de lenguaje avanzados para comprender el contexto
+          del candidato, identificar experiencia profesional, habilidades técnicas,
+          certificaciones y generar coincidencias relevantes con una oferta laboral.
         </p>
 
 
         <h3>Arquitectura del proyecto</h3>
 
         <ul>
+
           <li>
-            <strong>Frontend:</strong> Interfaz web para gestión de candidatos,
-            carga de CVs y visualización de resultados.
+            <strong>Frontend:</strong>
+            Aplicación web desarrollada con React para gestión de candidatos,
+            visualización de rankings y consulta de resultados generados por IA.
           </li>
 
           <li>
-            <strong>Backend:</strong> API desarrollada con FastAPI encargada de
-            gestionar autenticación, candidatos, vacantes y comunicación con
+            <strong>Backend:</strong>
+            API desarrollada con FastAPI encargada de gestionar autenticación,
+            candidatos, vacantes, procesamiento de información y comunicación con
             servicios de inteligencia artificial.
           </li>
 
           <li>
-            <strong>Amazon Bedrock:</strong> Utilizado para integrar modelos de
-            lenguaje capaces de analizar información de candidatos y generar
-            evaluaciones inteligentes.
+            <strong>Amazon Bedrock:</strong>
+            Servicio utilizado para integrar modelos de lenguaje capaces de analizar
+            documentos y generar evaluaciones inteligentes.
           </li>
 
           <li>
-            <strong>Amazon Bedrock Knowledge Bases:</strong> Implementado para
-            crear un sistema RAG que permite consultar información contenida en
-            los documentos cargados.
+            <strong>Amazon Bedrock Knowledge Bases:</strong>
+            Implementación de arquitectura RAG (Retrieval Augmented Generation)
+            para consultar información almacenada dentro de las hojas de vida.
           </li>
 
           <li>
-            <strong>Amazon S3:</strong> Almacenamiento seguro de documentos y
-            recursos del proyecto.
+            <strong>Amazon S3:</strong>
+            Almacenamiento de documentos, archivos del proyecto y recursos estáticos.
           </li>
 
           <li>
-            <strong>AWS ECS Fargate:</strong> Despliegue del backend y frontend
-            utilizando contenedores sin administrar servidores.
+            <strong>AWS ECS Fargate:</strong>
+            Despliegue de aplicaciones mediante contenedores Docker sin administrar
+            servidores.
           </li>
 
           <li>
-            <strong>Application Load Balancer:</strong> Distribución del tráfico
-            hacia los servicios desplegados en AWS.
+            <strong>Application Load Balancer:</strong>
+            Distribución del tráfico hacia los servicios frontend y backend desplegados.
           </li>
 
           <li>
-            <strong>Amazon Cognito:</strong> Gestión de autenticación y seguridad
-            de usuarios mediante tokens JWT.
+            <strong>Amazon Cognito:</strong>
+            Gestión de autenticación mediante usuarios, tokens JWT y control de acceso.
           </li>
 
           <li>
-            <strong>CloudFront + Route 53 + ACM:</strong> Publicación del
-            proyecto utilizando dominio personalizado, HTTPS y distribución
-            global de contenido.
+            <strong>CloudFront + Route 53 + ACM:</strong>
+            Configuración de dominio personalizado, HTTPS y certificados SSL para
+            publicación segura de la aplicación.
           </li>
+
         </ul>
 
 
         <h3>Funcionalidades principales</h3>
 
         <ul>
+
           <li>
-            Carga y procesamiento de hojas de vida en formato PDF.
+            Carga y procesamiento automático de hojas de vida en formato PDF.
           </li>
 
           <li>
-            Extracción inteligente de información relevante del candidato.
+            Extracción inteligente de experiencia, habilidades y certificaciones.
           </li>
 
           <li>
-            Consultas mediante lenguaje natural sobre experiencia y habilidades.
+            Consultas mediante lenguaje natural sobre información del candidato.
           </li>
 
           <li>
-            Evaluación automática candidato-vacante.
+            Evaluación automática candidato-vacante utilizando Inteligencia Artificial.
           </li>
 
           <li>
@@ -170,8 +190,13 @@
           </li>
 
           <li>
-            Ranking inteligente de candidatos según requisitos del puesto.
+            Ranking inteligente de candidatos según los requisitos del puesto.
           </li>
+
+          <li>
+            Visualización de resultados mediante una interfaz web interactiva.
+          </li>
+
         </ul>
 
 
@@ -179,9 +204,41 @@
 
         <p>
           Python, FastAPI, React, JavaScript, Docker, AWS ECS Fargate,
-          Amazon Bedrock, Knowledge Bases, S3, Cognito, DynamoDB,
-          Application Load Balancer, CloudFront, Route 53 y AWS Certificate Manager.
+          Amazon Bedrock, Bedrock Knowledge Bases, Amazon S3, Cognito,
+          DynamoDB, Application Load Balancer, CloudFront, Route 53
+          y AWS Certificate Manager.
         </p>
+
+
+        <h3>Arquitectura Cloud</h3>
+
+        <p>
+          La solución utiliza una arquitectura moderna basada en servicios cloud:
+        </p>
+
+        <ul>
+
+          <li>
+            Frontend React desplegado en contenedores AWS ECS.
+          </li>
+
+          <li>
+            Backend FastAPI preparado para procesamiento de solicitudes mediante API REST.
+          </li>
+
+          <li>
+            Integración con modelos LLM mediante Amazon Bedrock.
+          </li>
+
+          <li>
+            Sistema RAG utilizando bases de conocimiento para recuperación semántica.
+          </li>
+
+          <li>
+            Comunicación segura mediante HTTPS y certificados administrados por AWS.
+          </li>
+
+        </ul>
 
 
         <h3>Impacto del proyecto</h3>
@@ -194,9 +251,22 @@
 
         <p>
           El proyecto integra conceptos actuales de la industria como arquitecturas
-          serverless, contenedores, APIs REST, autenticación segura, búsqueda
-          semántica y modelos de lenguaje, mostrando la capacidad de diseñar y
-          desplegar soluciones completas en AWS.
+          basadas en contenedores, APIs REST, autenticación segura, búsqueda semántica,
+          modelos de lenguaje y despliegue profesional en AWS.
+        </p>
+
+        <p>
+          Esta solución representa una aproximación real a cómo las empresas pueden
+          utilizar Inteligencia Artificial para mejorar y acelerar procesos de
+          selección de talento.
+        </p>
+
+
+        <p>
+          🔗 Acceso a la aplicación:
+          <a href="https://ai.adrianguerra.net" target="_blank">
+            ai.adrianguerra.net
+          </a>
         </p>
 
 
