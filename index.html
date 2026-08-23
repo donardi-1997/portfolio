@@ -54,30 +54,152 @@
           realmente aporten valor.</p>
       </section>
 
-      <section id="portfolio">
-        <h2>PORTAFOLIO</h2>
+      <section id="airecruiter">
 
-        <div class="portfolio-buttons">
-          <a href="https://upebbujmh9.us-east-2.awsapprunner.com" target="_blank" class="btn">
-            AI Recruiter
-          </a>
-        </div>
+        <h2>AI Recruiter</h2>
 
-        <div class="test-disclaimer">
-          <p><strong>⚠️ Demo / Pruebas</strong></p>
-          <p>
-            Esta aplicación es un proyecto de demostración. Puedes utilizar las
-            siguientes credenciales para probar el sistema:
-          </p>
+        <h3>Plataforma inteligente para análisis y evaluación de candidatos mediante Inteligencia Artificial</h3>
 
-          <p>
-            <strong>Usuario:</strong> test@airecruiter.com<br>
-            <strong>Contraseña:</strong> Test1234!Secure
-          </p>
+        <p>
+          AI Recruiter es una plataforma desarrollada para automatizar procesos de
+          selección de talento utilizando Inteligencia Artificial Generativa,
+          arquitectura cloud y técnicas de Retrieval Augmented Generation (RAG).
+        </p>
 
-          <p>
-          </p>
-        </div>
+        <p>
+          El objetivo del proyecto es reducir el tiempo necesario para analizar
+          hojas de vida y encontrar candidatos adecuados para una vacante específica.
+          La plataforma permite cargar documentos PDF de candidatos, procesar su
+          información utilizando modelos de lenguaje avanzados y generar evaluaciones
+          basadas en los requisitos de cada posición.
+        </p>
+
+
+        <h3>¿Cómo funciona?</h3>
+
+        <p>
+          El sistema recibe las hojas de vida de los candidatos y las almacena en
+          una arquitectura basada en servicios AWS. Los documentos son procesados
+          mediante embeddings y almacenados en una base de conocimiento para
+          realizar búsquedas semánticas.
+        </p>
+
+        <p>
+          A diferencia de una búsqueda tradicional por palabras clave, AI Recruiter
+          utiliza inteligencia artificial para comprender el contexto del candidato,
+          identificando experiencia, habilidades técnicas, certificaciones y
+          coincidencias relevantes con una oferta laboral.
+        </p>
+
+
+        <h3>Arquitectura del proyecto</h3>
+
+        <ul>
+          <li>
+            <strong>Frontend:</strong> Interfaz web para gestión de candidatos,
+            carga de CVs y visualización de resultados.
+          </li>
+
+          <li>
+            <strong>Backend:</strong> API desarrollada con FastAPI encargada de
+            gestionar autenticación, candidatos, vacantes y comunicación con
+            servicios de inteligencia artificial.
+          </li>
+
+          <li>
+            <strong>Amazon Bedrock:</strong> Utilizado para integrar modelos de
+            lenguaje capaces de analizar información de candidatos y generar
+            evaluaciones inteligentes.
+          </li>
+
+          <li>
+            <strong>Amazon Bedrock Knowledge Bases:</strong> Implementado para
+            crear un sistema RAG que permite consultar información contenida en
+            los documentos cargados.
+          </li>
+
+          <li>
+            <strong>Amazon S3:</strong> Almacenamiento seguro de documentos y
+            recursos del proyecto.
+          </li>
+
+          <li>
+            <strong>AWS ECS Fargate:</strong> Despliegue del backend y frontend
+            utilizando contenedores sin administrar servidores.
+          </li>
+
+          <li>
+            <strong>Application Load Balancer:</strong> Distribución del tráfico
+            hacia los servicios desplegados en AWS.
+          </li>
+
+          <li>
+            <strong>Amazon Cognito:</strong> Gestión de autenticación y seguridad
+            de usuarios mediante tokens JWT.
+          </li>
+
+          <li>
+            <strong>CloudFront + Route 53 + ACM:</strong> Publicación del
+            proyecto utilizando dominio personalizado, HTTPS y distribución
+            global de contenido.
+          </li>
+        </ul>
+
+
+        <h3>Funcionalidades principales</h3>
+
+        <ul>
+          <li>
+            Carga y procesamiento de hojas de vida en formato PDF.
+          </li>
+
+          <li>
+            Extracción inteligente de información relevante del candidato.
+          </li>
+
+          <li>
+            Consultas mediante lenguaje natural sobre experiencia y habilidades.
+          </li>
+
+          <li>
+            Evaluación automática candidato-vacante.
+          </li>
+
+          <li>
+            Generación de fortalezas, brechas técnicas y nivel de coincidencia.
+          </li>
+
+          <li>
+            Ranking inteligente de candidatos según requisitos del puesto.
+          </li>
+        </ul>
+
+
+        <h3>Tecnologías utilizadas</h3>
+
+        <p>
+          Python, FastAPI, React, JavaScript, Docker, AWS ECS Fargate,
+          Amazon Bedrock, Knowledge Bases, S3, Cognito, DynamoDB,
+          Application Load Balancer, CloudFront, Route 53 y AWS Certificate Manager.
+        </p>
+
+
+        <h3>Impacto del proyecto</h3>
+
+        <p>
+          AI Recruiter demuestra la aplicación práctica de Inteligencia Artificial
+          Generativa en un escenario empresarial real, combinando desarrollo de
+          software tradicional con servicios cloud modernos.
+        </p>
+
+        <p>
+          El proyecto integra conceptos actuales de la industria como arquitecturas
+          serverless, contenedores, APIs REST, autenticación segura, búsqueda
+          semántica y modelos de lenguaje, mostrando la capacidad de diseñar y
+          desplegar soluciones completas en AWS.
+        </p>
+
+
       </section>
 
       <section id="education">
