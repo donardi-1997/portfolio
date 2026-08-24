@@ -4,434 +4,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Adrián Felipe Guerra, desarrollador full stack y cloud especializado en AWS, inteligencia artificial y productos digitales.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adrián Guerra | Cloud & Full-stack Engineer">
+  <meta property="og:description" content="Diseño productos cloud donde la IA sí llega a producción.">
+  <meta property="og:url" content="https://adrianguerra.net">
+  <meta property="og:image" content="https://adrianguerra.net/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Adrián Guerra, Cloud & Full-stack Engineer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adrián Guerra | Cloud & Full-stack Engineer">
+  <meta name="twitter:description" content="Diseño productos cloud donde la IA sí llega a producción.">
+  <meta name="twitter:image" content="https://adrianguerra.net/images/og.png">
   <script src="https://kit.fontawesome.com/27d1f4e240.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/app.js"></script>
-  <title>Portafolio Adrian Guerra</title>
+  <title>Adrián Guerra | Cloud & Full-stack Engineer</title>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <div class="hamburger">
-    <i class="fas fa-bars"></i>
-  </div>
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a class="brand" href="#main" aria-label="Ir al inicio">
+        <span class="brand-mark">AG</span>
+        <span class="brand-copy"><strong>Adrián Guerra</strong><small>Cloud & Full-stack</small></span>
+      </a>
 
-  <div class="wrapper">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
 
-    <div class="side-bar">
-      <h4 class="name">Adrian Felipe Restrepo Guerra</h4>
-      <ul id="menu">
-        <li><a class="nav-button main" href="#main">Adrian Guerra</a></li>
-        <li><a class="nav-button about-me" href="#about-me">Algo Sobre Mi</a></li>
-        <li><a class="nav-button airecruiter" href="#airecruiter">Ai Recruiter</a></li>
-        <li><a class="nav-button education" href="#education">Certificados</a></li>
-        <li><a class="nav-button skills" href="#skills">Skills</a></li>
-        <li><a class="nav-button contact" href="#contact">Contacto</a></li>
+      <ul id="menu" class="nav-links">
+        <li><a class="nav-button active" href="#main">Inicio</a></li>
+        <li><a class="nav-button" href="#about-me">Perfil</a></li>
+        <li><a class="nav-button" href="#airecruiter">Proyecto</a></li>
+        <li><a class="nav-button" href="#education">Certificaciones</a></li>
+        <li><a class="nav-button" href="#skills">Stack</a></li>
+        <li><a class="nav-button nav-contact" href="#contact">Hablemos</a></li>
       </ul>
-    </div>
-    <div class="main-content">
-      <section id="main">
-        <h1>ADRIAN <span class="">GUERRA</span></h1>
-        <h4>BIENVENIDX A MI PORTAFOLIO COMO DESARROLLADOR FULL STACK</h4>
-        <p>Si quieres ponerte en contacto, envíame un correo <a href="mailto:adrianguerra9703@gmail.com">aquí.</a></p>
-        <a href="docs/Adrian_Felipe_Restrepo_AWS_Developer.pdf" download class="button-cv">Descarga mi hoja de vida</a>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/adrian-felipe-guerra/" target="_blank">
-            <img src="images/linkedin.png" alt="linkedin">
-          </a>
-          <a href="https://github.com/donardi-1997" target="_blank">
-            <img src="images/git.png" alt="git">
-          </a>
-        </div>
-      </section>
+    </nav>
+  </header>
 
-      <section id="about-me">
-        <h2>Algo SOBRE MI</h2>
-        <p>Soy desarrollador full stack con enfoque en soluciones tecnológicas y análisis de datos. Me apasiona
-          transformar ideas en proyectos funcionales, combinando desarrollo, Business Intelligence y creatividad.
-          Disfruto aprender nuevas herramientas y aplicar ese conocimiento para crear experiencias digitales que
-          realmente aporten valor.</p>
-      </section>
+  <main class="main-content">
+    <section id="main" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Bogotá, Colombia · Disponible para nuevos retos</p>
+        <h1>Adrián Felipe<br><span>Guerra.</span></h1>
+        <h2>Diseño productos cloud donde la IA sí llega a producción.</h2>
+        <p class="hero-intro">Desarrollador full stack especializado en AWS. Convierto problemas complejos en productos claros, seguros y escalables, desde la interfaz hasta la arquitectura.</p>
 
-      <section id="airecruiter">
-
-        <h2>AI Recruiter</h2>
-
-        <h3>
-          Plataforma inteligente para análisis y evaluación de candidatos mediante Inteligencia Artificial
-        </h3>
-
-
-        <!-- SHOWCASE MOBILE RESPONSIVE -->
-
-        <h3>Aplicación responsive desplegada en AWS</h3>
-
-        <p>
-          Capturas de la plataforma funcionando en dispositivos móviles,
-          demostrando diseño responsive y adaptación a diferentes tamaños de pantalla.
-        </p>
-
-
-        <div class="project-showcase">
-
-          <div class="preview">
-            <img src="images/ai-recruiter/login.png" alt="Login AI Recruiter Mobile">
-          </div>
-
-
-          <div class="preview">
-            <img src="images/ai-recruiter/dashboard.png" alt="Dashboard AI Recruiter Mobile">
-          </div>
-
-
-          <div class="preview">
-            <img src="images/ai-recruiter/ranking.png" alt="Ranking candidatos AI Recruiter Mobile">
-          </div>
-
-
-          <div class="preview">
-            <img src="images/ai-recruiter/evaluation.png" alt="Evaluación candidatos mediante IA Mobile">
-          </div>
-
+        <div class="hero-actions">
+          <a class="button button-primary" href="#airecruiter">Ver proyecto destacado <i class="fa-solid fa-arrow-down"></i></a>
+          <a class="button button-secondary" href="docs/Adrian_Felipe_Restrepo_AWS_Developer.pdf" download>Descargar CV <i class="fa-solid fa-download"></i></a>
         </div>
 
+        <div class="hero-links" aria-label="Perfiles profesionales">
+          <a href="https://www.linkedin.com/in/adrian-felipe-guerra/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://github.com/donardi-1997" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="mailto:adrianguerra9703@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+        </div>
+      </div>
 
+      <div class="hero-visual" aria-label="Arquitectura cloud del proyecto AI Recruiter">
+        <div class="architecture-card">
+          <div class="card-topbar">
+            <span><i class="fa-solid fa-circle-nodes"></i> production.architecture</span>
+            <span class="live-status"><span></span> LIVE</span>
+          </div>
+          <div class="architecture-flow">
+            <div class="service-node featured-node"><small>EXPERIENCE</small><strong>React</strong><span>Responsive UI</span></div>
+            <div class="flow-line"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="service-node"><small>EDGE</small><strong>ALB</strong><span>HTTPS · /api</span></div>
+            <div class="flow-line"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="service-node"><small>COMPUTE</small><strong>Fargate</strong><span>FastAPI</span></div>
+          </div>
+          <div class="cloud-layer">
+            <span><i class="fa-brands fa-aws"></i> Amazon Web Services</span>
+            <div class="cloud-services">
+              <span>Bedrock</span><span>Cognito</span><span>DynamoDB</span><span>S3</span>
+            </div>
+          </div>
+          <div class="card-metrics">
+            <div><strong>99.9%</strong><span>Disponibilidad</span></div>
+            <div><strong>HTTPS</strong><span>Tráfico seguro</span></div>
+            <div><strong>CI/CD</strong><span>Entrega continua</span></div>
+          </div>
+        </div>
+        <div class="floating-badge badge-aws"><i class="fa-brands fa-aws"></i><span><strong>3× AWS</strong> certified</span></div>
+        <div class="floating-badge badge-code"><i class="fa-solid fa-code"></i><span><strong>Full stack</strong> end to end</span></div>
+      </div>
+    </section>
 
-        <p>
-          🚀 Demo disponible:
-        </p>
+    <section id="about-me" class="content-section section-shell reveal-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">01 · Perfil</p>
+          <h2>Pienso en producto.<br>Construyo con criterio.</h2>
+        </div>
+        <p>Soy desarrollador full stack con foco en soluciones cloud, inteligencia artificial y datos. Me interesa la tecnología cuando resuelve un problema real y se traduce en una experiencia simple para quien la usa.</p>
+      </div>
 
+      <div class="profile-grid">
+        <article class="profile-statement">
+          <span class="quote-mark">“</span>
+          <p>Combino arquitectura, código y visión de negocio para llevar una idea desde el primer boceto hasta producción.</p>
+          <div class="profile-signature">
+            <span class="mini-avatar">AG</span>
+            <div><strong>Adrián Felipe Guerra</strong><small>Full-stack · AWS · Generative AI</small></div>
+          </div>
+        </article>
 
-        <a href="https://ai.adrianguerra.net" target="_blank" class="button-cv">
+        <div class="profile-details">
+          <div class="detail-card">
+            <i class="fa-solid fa-layer-group"></i>
+            <div><strong>Visión integral</strong><p>Frontend, APIs, datos, seguridad, automatización y despliegue.</p></div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <div><strong>Cloud por diseño</strong><p>Arquitecturas escalables en AWS con foco en seguridad y costos.</p></div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <div><strong>IA aplicada</strong><p>LLMs, RAG y automatización convertidos en flujos útiles.</p></div>
+          </div>
+        </div>
+      </div>
 
-          Probar AI Recruiter
+      <div class="profile-numbers" aria-label="Resumen profesional">
+        <div><strong>3</strong><span>Certificaciones AWS</span></div>
+        <div><strong>1</strong><span>Producto cloud en producción</span></div>
+        <div><strong>360°</strong><span>Visión end to end</span></div>
+        <div><strong>∞</strong><span>Curiosidad por aprender</span></div>
+      </div>
+    </section>
 
+    <section id="airecruiter" class="content-section project-section reveal-section">
+      <div class="section-shell">
+        <div class="section-heading project-heading">
+          <div>
+            <p class="section-kicker">02 · Proyecto destacado</p>
+            <h2>AI Recruiter</h2>
+          </div>
+          <div class="project-status"><span></span> Producción · AWS</div>
+        </div>
+
+        <div class="project-intro">
+          <div>
+            <h3>Selección de talento impulsada por inteligencia artificial.</h3>
+            <p>Una plataforma que analiza hojas de vida, comprende los requisitos de una vacante y genera evaluaciones explicables, rankings y hallazgos accionables para acelerar la toma de decisiones.</p>
+            <div class="project-actions">
+              <a class="button button-primary" href="https://ai.adrianguerra.net" target="_blank" rel="noreferrer">Explorar producto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="text-link" href="https://github.com/donardi-1997/ai-recruiter" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> Ver código</a>
+            </div>
+          </div>
+          <div class="project-highlights">
+            <div><i class="fa-solid fa-file-pdf"></i><span><strong>PDF → conocimiento</strong>Procesamiento automático de CVs</span></div>
+            <div><i class="fa-solid fa-ranking-star"></i><span><strong>Ranking explicable</strong>Fortalezas, brechas y coincidencia</span></div>
+            <div><i class="fa-solid fa-lock"></i><span><strong>Acceso seguro</strong>Cognito, JWT y HTTPS</span></div>
+          </div>
+        </div>
+
+        <div class="product-window" aria-label="Capturas de AI Recruiter">
+          <div class="window-bar">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <span>ai.adrianguerra.net</span>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="product-gallery">
+            <figure class="gallery-primary">
+              <img src="images/ai-recruiter/dashboard.png" alt="Dashboard de AI Recruiter con métricas de vacantes, candidatos y evaluaciones" loading="lazy">
+              <figcaption>Dashboard operativo</figcaption>
+            </figure>
+            <div class="gallery-secondary">
+              <figure><img src="images/ai-recruiter/ranking.png" alt="Ranking inteligente de candidatos" loading="lazy"><figcaption>Ranking</figcaption></figure>
+              <figure><img src="images/ai-recruiter/evaluation.png" alt="Resultado de evaluación de candidato con IA" loading="lazy"><figcaption>Evaluación IA</figcaption></figure>
+              <figure><img src="images/ai-recruiter/login.png" alt="Pantalla de acceso segura de AI Recruiter" loading="lazy"><figcaption>Acceso seguro</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-grid">
+          <article><span>01</span><h3>El reto</h3><p>Revisar perfiles manualmente consume tiempo y hace difícil comparar candidatos con criterios consistentes.</p></article>
+          <article><span>02</span><h3>La solución</h3><p>Un flujo RAG que extrae contexto del CV, lo contrasta con la vacante y devuelve evidencia comprensible.</p></article>
+          <article><span>03</span><h3>El resultado</h3><p>Una experiencia responsive que centraliza candidatos, evaluaciones y decisiones en un solo producto.</p></article>
+        </div>
+
+        <div class="architecture-section">
+          <div class="architecture-copy">
+            <p class="section-kicker">Arquitectura</p>
+            <h3>Una plataforma real, no un prototipo aislado.</h3>
+            <p>Frontend y backend se ejecutan en contenedores independientes sobre Fargate, detrás de un único Application Load Balancer. La capa de IA se integra con Amazon Bedrock y Knowledge Bases.</p>
+          </div>
+          <div class="architecture-stack">
+            <div><span>01</span><i class="fa-brands fa-react"></i><strong>React</strong><small>Experiencia web</small></div>
+            <div><span>02</span><i class="fa-solid fa-code"></i><strong>FastAPI</strong><small>Servicios REST</small></div>
+            <div><span>03</span><i class="fa-brands fa-docker"></i><strong>Fargate</strong><small>Contenedores</small></div>
+            <div><span>04</span><i class="fa-solid fa-brain"></i><strong>Bedrock</strong><small>LLM + RAG</small></div>
+            <div><span>05</span><i class="fa-solid fa-database"></i><strong>AWS Data</strong><small>S3 + DynamoDB</small></div>
+            <div><span>06</span><i class="fa-solid fa-shield-halved"></i><strong>Cognito</strong><small>Identidad segura</small></div>
+          </div>
+        </div>
+
+        <div class="technology-strip" aria-label="Tecnologías del proyecto">
+          <span>React</span><span>FastAPI</span><span>Python</span><span>Docker</span><span>ECS Fargate</span><span>Bedrock</span><span>RAG</span><span>Cognito</span><span>DynamoDB</span><span>Route 53</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="content-section section-shell reveal-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">03 · Certificaciones</p>
+          <h2>Conocimiento validado.<br>Aprendizaje continuo.</h2>
+        </div>
+        <p>Una base sólida en arquitectura, desarrollo y fundamentos cloud, complementada con formación práctica en desarrollo web.</p>
+      </div>
+
+      <div class="cert-grid">
+        <a class="cert-card aws-cert" href="https://www.credly.com/badges/20e8cc69-5cc8-4a9c-8992-275980d92916/public_url" target="_blank" rel="noreferrer">
+          <span class="cert-icon"><i class="fa-brands fa-aws"></i></span>
+          <small>Amazon Web Services</small><h3>Developer – Associate</h3><p>Desarrollo, despliegue y troubleshooting de aplicaciones en AWS.</p><span class="cert-link">Ver credencial <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
-
-
-
-        <p>
-          AI Recruiter es una plataforma desarrollada para automatizar procesos de
-          selección de talento utilizando Inteligencia Artificial Generativa,
-          arquitectura cloud y técnicas de Retrieval Augmented Generation (RAG).
-        </p>
-
-
-        <p>
-          El objetivo del proyecto es reducir el tiempo necesario para analizar hojas
-          de vida y encontrar candidatos adecuados para una vacante específica.
-
-          La plataforma permite cargar documentos PDF de candidatos, procesar su
-          información mediante modelos de lenguaje avanzados y generar evaluaciones
-          inteligentes basadas en los requisitos de cada posición.
-        </p>
-
-
-        <p>
-          La aplicación está desplegada en AWS utilizando una arquitectura basada en
-          contenedores Docker, servicios administrados y buenas prácticas de seguridad
-          cloud.
-        </p>
-
-
-
-        <h3>¿Cómo funciona?</h3>
-
-
-        <p>
-          El sistema recibe las hojas de vida de los candidatos y almacena los
-          documentos utilizando servicios AWS.
-
-          Posteriormente, la información es procesada mediante extracción de datos,
-          embeddings y búsqueda semántica para construir una base de conocimiento
-          inteligente.
-        </p>
-
-
-        <p>
-          A diferencia de una búsqueda tradicional basada únicamente en palabras
-          clave, AI Recruiter utiliza modelos de lenguaje avanzados para comprender
-          el contexto del candidato, identificar experiencia profesional, habilidades
-          técnicas, certificaciones y generar coincidencias relevantes con una oferta
-          laboral.
-        </p>
-
-
-
-
-        <h3>Arquitectura del proyecto</h3>
-
-
-        <ul>
-
-
-          <li>
-            <strong>Frontend:</strong>
-            Aplicación web desarrollada con React para gestión de candidatos,
-            visualización de rankings y consulta de resultados generados por IA.
-          </li>
-
-
-          <li>
-            <strong>Backend:</strong>
-            API desarrollada con FastAPI encargada de gestionar autenticación,
-            candidatos, vacantes, procesamiento de información y comunicación con
-            servicios de inteligencia artificial.
-          </li>
-
-
-          <li>
-            <strong>Amazon Bedrock:</strong>
-            Servicio utilizado para integrar modelos de lenguaje capaces de analizar
-            documentos y generar evaluaciones inteligentes.
-          </li>
-
-
-          <li>
-            <strong>Amazon Bedrock Knowledge Bases:</strong>
-            Implementación de arquitectura RAG (Retrieval Augmented Generation)
-            para consultar información almacenada dentro de las hojas de vida.
-          </li>
-
-
-          <li>
-            <strong>Amazon S3:</strong>
-            Almacenamiento seguro de documentos, archivos del proyecto y recursos
-            estáticos.
-          </li>
-
-
-          <li>
-            <strong>AWS ECS Fargate:</strong>
-            Despliegue del frontend y backend mediante contenedores Docker sin
-            administrar servidores.
-          </li>
-
-
-          <li>
-            <strong>Application Load Balancer:</strong>
-            Distribución del tráfico hacia los servicios desplegados en AWS.
-          </li>
-
-
-          <li>
-            <strong>Amazon Cognito:</strong>
-            Gestión de autenticación mediante usuarios, tokens JWT y control de acceso.
-          </li>
-
-
-          <li>
-            <strong>Route 53 + ACM:</strong>
-            Configuración de dominio personalizado, HTTPS y certificados SSL.
-          </li>
-
-
-        </ul>
-
-
-
-
-        <h3>Funcionalidades principales</h3>
-
-
-        <ul>
-
-
-          <li>
-            Carga y procesamiento automático de hojas de vida en formato PDF.
-          </li>
-
-
-          <li>
-            Extracción inteligente de experiencia, habilidades y certificaciones.
-          </li>
-
-
-          <li>
-            Consultas mediante lenguaje natural sobre información del candidato.
-          </li>
-
-
-          <li>
-            Evaluación automática candidato-vacante utilizando Inteligencia Artificial.
-          </li>
-
-
-          <li>
-            Generación de fortalezas, brechas técnicas y nivel de coincidencia.
-          </li>
-
-
-          <li>
-            Ranking inteligente de candidatos según requisitos del puesto.
-          </li>
-
-
-          <li>
-            Interfaz web responsive accesible desde dispositivos móviles.
-          </li>
-
-
-        </ul>
-
-
-
-
-        <h3>Tecnologías utilizadas</h3>
-
-
-        <p>
-          Python, FastAPI, React, JavaScript, Docker, AWS ECS Fargate,
-          Amazon Bedrock, Bedrock Knowledge Bases, Amazon S3, Cognito,
-          DynamoDB, Application Load Balancer, Route 53 y AWS Certificate Manager.
-        </p>
-
-
-
-
-
-        <h3>Arquitectura Cloud</h3>
-
-
-        <p>
-          La solución utiliza una arquitectura moderna basada en servicios cloud:
-        </p>
-
-
-        <ul>
-
-
-          <li>
-            Frontend React desplegado mediante contenedores AWS ECS Fargate.
-          </li>
-
-
-          <li>
-            Backend FastAPI preparado para procesamiento mediante APIs REST.
-          </li>
-
-
-          <li>
-            Integración con modelos LLM mediante Amazon Bedrock.
-          </li>
-
-
-          <li>
-            Sistema RAG utilizando Knowledge Bases para recuperación semántica.
-          </li>
-
-
-          <li>
-            Comunicación segura mediante HTTPS y certificados administrados por AWS.
-          </li>
-
-
-        </ul>
-
-
-
-
-        <h3>Impacto del proyecto</h3>
-
-
-        <p>
-          AI Recruiter demuestra la aplicación práctica de Inteligencia Artificial
-          Generativa en un escenario empresarial real, combinando desarrollo de
-          software tradicional con servicios cloud modernos.
-        </p>
-
-
-        <p>
-          El proyecto integra conceptos actuales de la industria como arquitecturas
-          basadas en contenedores, APIs REST, autenticación segura, búsqueda semántica,
-          modelos de lenguaje y despliegue profesional en AWS.
-        </p>
-
-
-        <p>
-          Esta solución representa una aproximación real a cómo las empresas pueden
-          utilizar Inteligencia Artificial para optimizar procesos de selección de
-          talento, reduciendo tiempos de análisis y mejorando la toma de decisiones.
-        </p>
-
-
-
-        <p>
-          🔗 Acceso a la aplicación:
-          <a href="https://ai.adrianguerra.net" target="_blank">
-
-            ai.adrianguerra.net
-
-          </a>
-        </p>
-
-
-      </section>
-
-      <section id="education">
-        <h2>CERTIFICADOS</h2>
-        <p>Haz clic en cada certificado para verlo en línea:</p>
-        <ul>
-          <li>
-            <a href="https://www.credly.com/badges/20e8cc69-5cc8-4a9c-8992-275980d92916/public_url" target="_blank">
-              AWS Certified Developer – Associate
-            </a>
-          </li>
-          <li>
-            <a href="https://www.credly.com/badges/37d6d659-da5d-4dce-a937-19318dec927f/public_url" target="_blank">
-              AWS Solutions Architect – Associate
-            </a>
-          </li>
-          <li>
-            <a href="https://www.credly.com/badges/11640b8b-7948-4c16-8221-752cdc2895b1/public_url" target="_blank">
-              AWS Certified Cloud Practitioner
-            </a>
-          </li>
-          <li>
-            <a href="https://www.freecodecamp.org/certification/adrianguerra/responsive-web-design" target="_blank">
-              FreeCodeCamp – Responsive Web Design
-            </a>
-          </li>
-          <li>
-            <a href="https://www.freecodecamp.org/espanol/certification/adrianguerra/javascript-algorithms-and-data-structures"
-              target="_blank">
-              FreeCodeCamp – JavaScript Algorithms & Data Structures
-            </a>
-          </li>
-          <li>
-            Ingeniería de Sistemas – 6 semestres cursados
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <h2>SKILLS</h2>
-        <ul>
-          <li>Business Intelligence (Power BI, análisis de datos) – Intermedio</li>
-          <li>Python para análisis de datos (Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn, PySpark)</li>
-          <li>Gestión de proyectos (Jira, Trello) – Básico</li>
-          <li>Desarrollo web (HTML, CSS, JavaScript)</li>
-          <li>Cloud Computing con AWS</li>
-          <!-- Skills derivados de certificados AWS -->
-          <li>Diseño y despliegue de arquitecturas escalables en AWS (Solutions Architect)</li>
-          <li>Desarrollo de aplicaciones serverless y CI/CD en AWS (Developer Associate)</li>
-          <li>Fundamentos de Cloud Computing y buenas prácticas en AWS (Cloud Practitioner)</li>
-          <li>Gestión de servicios AWS: EC2, S3, RDS, Lambda, IAM</li>
-          <li>Optimización de costos y seguridad en entornos cloud</li>
-        </ul>
-      </section>
-
-      <section id="contact">
-        <h2>CONTACTO</h2>
-        <p>📍 Ubicación: Bogotá, Colombia</p>
-        <p>📧 Email: <a href="mailto:adrianguerra9703@gmail.com">adrianguerra9703@gmail.com</a></p>
-        <p>📱 Teléfono: 312 438 0222</p>
-      </section>
-
-    </div>
-  </div>
-
+        <a class="cert-card aws-cert featured-cert" href="https://www.credly.com/badges/37d6d659-da5d-4dce-a937-19318dec927f/public_url" target="_blank" rel="noreferrer">
+          <span class="cert-icon"><i class="fa-brands fa-aws"></i></span>
+          <small>Amazon Web Services</small><h3>Solutions Architect – Associate</h3><p>Diseño de arquitecturas seguras, resilientes y optimizadas.</p><span class="cert-link">Ver credencial <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+        <a class="cert-card aws-cert" href="https://www.credly.com/badges/11640b8b-7948-4c16-8221-752cdc2895b1/public_url" target="_blank" rel="noreferrer">
+          <span class="cert-icon"><i class="fa-brands fa-aws"></i></span>
+          <small>Amazon Web Services</small><h3>Cloud Practitioner</h3><p>Fundamentos cloud, seguridad, costos y servicios esenciales.</p><span class="cert-link">Ver credencial <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+        <a class="cert-card compact-cert" href="https://www.freecodecamp.org/certification/adrianguerra/responsive-web-design" target="_blank" rel="noreferrer"><span class="cert-icon"><i class="fa-brands fa-free-code-camp"></i></span><div><small>freeCodeCamp</small><h3>Responsive Web Design</h3></div><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="cert-card compact-cert" href="https://www.freecodecamp.org/espanol/certification/adrianguerra/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer"><span class="cert-icon"><i class="fa-brands fa-js"></i></span><div><small>freeCodeCamp</small><h3>JavaScript Algorithms</h3></div><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <article class="cert-card compact-cert"><span class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></span><div><small>Formación académica</small><h3>Ingeniería de Sistemas</h3></div><span class="academic-note">6 semestres</span></article>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section skills-section reveal-section">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">04 · Stack</p>
+            <h2>Herramientas para construir<br>de principio a fin.</h2>
+          </div>
+          <p>No colecciono tecnologías: selecciono las adecuadas para diseñar, entregar y operar una solución con claridad.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-card-head"><span>01</span><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud Architecture</h3><p>Diseño, seguridad, observabilidad y optimización de costos en AWS.</p>
+            <div class="skill-tags"><span>ECS Fargate</span><span>Lambda</span><span>S3</span><span>DynamoDB</span><span>IAM</span><span>Route 53</span><span>ALB</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-head"><span>02</span><i class="fa-solid fa-brain"></i></div>
+            <h3>Backend & AI</h3><p>APIs robustas y flujos inteligentes con contexto, evidencia y datos.</p>
+            <div class="skill-tags"><span>Python</span><span>FastAPI</span><span>Amazon Bedrock</span><span>RAG</span><span>REST APIs</span><span>JWT</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-head"><span>03</span><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Frontend</h3><p>Interfaces accesibles, responsivas y enfocadas en tareas reales.</p>
+            <div class="skill-tags"><span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Responsive UI</span><span>UX</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-head"><span>04</span><i class="fa-solid fa-chart-simple"></i></div>
+            <h3>Data & Delivery</h3><p>Análisis, visualización y automatización del camino hasta producción.</p>
+            <div class="skill-tags"><span>Power BI</span><span>Pandas</span><span>NumPy</span><span>Docker</span><span>GitHub Actions</span><span>CI/CD</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-shell reveal-section">
+      <div class="contact-card">
+        <div>
+          <p class="section-kicker">05 · Contacto</p>
+          <h2>¿Construimos algo<br>que valga la pena?</h2>
+          <p>Estoy abierto a oportunidades en desarrollo full stack, cloud e inteligencia artificial aplicada.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:adrianguerra9703@gmail.com"><span>Escríbeme</span><strong>adrianguerra9703@gmail.com</strong><i class="fa-solid fa-arrow-right"></i></a>
+          <div class="contact-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</span>
+            <a href="tel:+573124380222"><i class="fa-solid fa-phone"></i> +57 312 438 0222</a>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/adrian-felipe-guerra/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/donardi-1997" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="docs/Adrian_Felipe_Restrepo_AWS_Developer.pdf" download aria-label="Descargar hoja de vida"><i class="fa-solid fa-file-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>© <span id="year"></span> Adrián Felipe Guerra</p>
+    <p>Diseñado y construido con intención en Bogotá.</p>
+    <a href="#main">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
 </body>
 
 </html>
