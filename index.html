@@ -79,7 +79,7 @@
           <div class="architecture-flow">
             <div class="service-node featured-node"><small>EXPERIENCE</small><strong>React</strong><span>Responsive UI</span></div>
             <div class="flow-line"><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="service-node"><small>EDGE</small><strong>ALB</strong><span>HTTPS · /api</span></div>
+            <div class="service-node"><small>EDGE</small><strong>CloudFront</strong><span>S3 · /api proxy</span></div>
             <div class="flow-line"><i class="fa-solid fa-arrow-right"></i></div>
             <div class="service-node"><small>COMPUTE</small><strong>Fargate</strong><span>FastAPI</span></div>
           </div>
@@ -169,22 +169,43 @@
           </div>
         </div>
 
-        <div class="product-window" aria-label="Capturas de AI Recruiter">
+        <div class="product-window" aria-label="AI Recruiter en escritorio">
           <div class="window-bar">
             <div class="window-dots"><span></span><span></span><span></span></div>
             <span>ai.adrianguerra.net</span>
             <i class="fa-solid fa-lock"></i>
           </div>
-          <div class="product-gallery">
-            <figure class="gallery-primary">
-              <img src="images/ai-recruiter/dashboard.png" alt="Dashboard de AI Recruiter con métricas de vacantes, candidatos y evaluaciones" loading="lazy">
-              <figcaption>Dashboard operativo</figcaption>
+          <div class="desktop-gallery">
+            <figure class="desktop-shot desktop-shot-featured">
+              <img src="images/ai-recruiter/dashboard.png" alt="Dashboard de AI Recruiter con métricas de vacantes y candidatos" loading="lazy">
+              <figcaption><strong>Dashboard</strong><span>Visión operativa del proceso</span></figcaption>
             </figure>
-            <div class="gallery-secondary">
-              <figure><img src="images/ai-recruiter/ranking.png" alt="Ranking inteligente de candidatos" loading="lazy"><figcaption>Ranking</figcaption></figure>
-              <figure><img src="images/ai-recruiter/evaluation.png" alt="Resultado de evaluación de candidato con IA" loading="lazy"><figcaption>Evaluación IA</figcaption></figure>
-              <figure><img src="images/ai-recruiter/login.png" alt="Pantalla de acceso segura de AI Recruiter" loading="lazy"><figcaption>Acceso seguro</figcaption></figure>
-            </div>
+            <figure class="desktop-shot">
+              <img src="images/ai-recruiter/vacantes.png" alt="Gestión de vacantes de AI Recruiter" loading="lazy">
+              <figcaption><strong>Vacantes</strong><span>Perfiles y requisitos centralizados</span></figcaption>
+            </figure>
+            <figure class="desktop-shot">
+              <img src="images/ai-recruiter/candidatos.png" alt="Gestión de candidatos y hojas de vida" loading="lazy">
+              <figcaption><strong>Candidatos</strong><span>CVs listos para evaluar</span></figcaption>
+            </figure>
+            <figure class="desktop-shot">
+              <img src="images/ai-recruiter/ranking.png" alt="Ranking inteligente de candidatos por afinidad" loading="lazy">
+              <figcaption><strong>Ranking IA</strong><span>Puntajes, fortalezas y brechas</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="mobile-showcase" aria-label="AI Recruiter en dispositivos móviles">
+          <div class="mobile-showcase-copy">
+            <p class="section-kicker">Experiencia responsive</p>
+            <h3>El mismo flujo, listo para trabajar desde cualquier pantalla.</h3>
+            <p>La navegación, las métricas y las acciones clave se reorganizan para mantener la jerarquía y la legibilidad en móvil, sin recortar funcionalidades.</p>
+          </div>
+          <div class="mobile-gallery">
+            <figure><div class="phone-frame"><img src="images/ai-recruiter/dashboard-mobile.png" alt="Dashboard de AI Recruiter en móvil" loading="lazy"></div><figcaption>Dashboard</figcaption></figure>
+            <figure><div class="phone-frame"><img src="images/ai-recruiter/vacantes-mobile.png" alt="Vacantes de AI Recruiter en móvil" loading="lazy"></div><figcaption>Vacantes</figcaption></figure>
+            <figure><div class="phone-frame"><img src="images/ai-recruiter/candidatos-mobile.png" alt="Candidatos de AI Recruiter en móvil" loading="lazy"></div><figcaption>Candidatos</figcaption></figure>
+            <figure><div class="phone-frame"><img src="images/ai-recruiter/ranking-mobile.png" alt="Ranking de AI Recruiter en móvil" loading="lazy"></div><figcaption>Ranking IA</figcaption></figure>
           </div>
         </div>
 
@@ -196,22 +217,34 @@
 
         <div class="architecture-section">
           <div class="architecture-copy">
-            <p class="section-kicker">Arquitectura</p>
-            <h3>Una plataforma real, no un prototipo aislado.</h3>
-            <p>Frontend y backend se ejecutan en contenedores independientes sobre Fargate, detrás de un único Application Load Balancer. La capa de IA se integra con Amazon Bedrock y Knowledge Bases.</p>
+            <p class="section-kicker">Arquitectura de producción</p>
+            <h3>Entrega rápida en el edge; IA y datos detrás de una API segura.</h3>
+            <p>El frontend React se publica como archivos estáticos en un bucket privado de S3 y CloudFront lo distribuye globalmente. Las solicitudes <code>/api/*</code> viajan por HTTPS al Application Load Balancer y llegan a FastAPI en ECS Fargate.</p>
           </div>
-          <div class="architecture-stack">
-            <div><span>01</span><i class="fa-brands fa-react"></i><strong>React</strong><small>Experiencia web</small></div>
-            <div><span>02</span><i class="fa-solid fa-code"></i><strong>FastAPI</strong><small>Servicios REST</small></div>
-            <div><span>03</span><i class="fa-brands fa-docker"></i><strong>Fargate</strong><small>Contenedores</small></div>
-            <div><span>04</span><i class="fa-solid fa-brain"></i><strong>Bedrock</strong><small>LLM + RAG</small></div>
-            <div><span>05</span><i class="fa-solid fa-database"></i><strong>AWS Data</strong><small>S3 + DynamoDB</small></div>
-            <div><span>06</span><i class="fa-solid fa-shield-halved"></i><strong>Cognito</strong><small>Identidad segura</small></div>
+          <div class="architecture-facts" aria-label="Principios de la arquitectura">
+            <div><i class="fa-solid fa-bolt"></i><span><strong>Frontend estático</strong>CloudFront + S3 privado</span></div>
+            <div><i class="fa-solid fa-shield-halved"></i><span><strong>Acceso aislado</strong>Cognito, JWT e IAM</span></div>
+            <div><i class="fa-solid fa-brain"></i><span><strong>IA con evidencia</strong>Bedrock Knowledge Bases</span></div>
           </div>
+
+          <figure class="architecture-diagram">
+            <a class="architecture-image-link" href="images/ai-recruiter/architecture.svg" target="_blank" rel="noreferrer" aria-label="Abrir el diagrama de arquitectura a tamaño completo">
+              <img src="images/ai-recruiter/architecture.svg" alt="Diagrama de arquitectura AWS de AI Recruiter" loading="lazy">
+            </a>
+            <figcaption>Flujo completo desde el navegador hasta la entrega continua, la persistencia y la evaluación RAG.</figcaption>
+          </figure>
+
+          <ol class="architecture-steps">
+            <li><span>01</span><div><strong>Entrega y enrutamiento</strong><p>Route 53 apunta a CloudFront. El CDN entrega la SPA desde S3 y reenvía únicamente las rutas de API al origen HTTPS.</p></div></li>
+            <li><span>02</span><div><strong>API e identidad</strong><p>FastAPI corre en ECS Fargate detrás del ALB. Cognito emite los tokens JWT y la API valida el propietario antes de acceder a sus datos.</p></div></li>
+            <li><span>03</span><div><strong>Datos y documentos</strong><p>DynamoDB conserva vacantes, candidatos y evaluaciones; los CV en PDF y sus metadatos se almacenan de forma separada en S3.</p></div></li>
+            <li><span>04</span><div><strong>Evaluación con RAG</strong><p>Bedrock Knowledge Bases ingiere los CV, recupera evidencia relevante y Amazon Nova Lite genera puntajes, fortalezas y brechas explicables.</p></div></li>
+            <li><span>05</span><div><strong>Despliegue continuo</strong><p>GitHub Actions usa OIDC: publica el frontend en S3, invalida CloudFront y entrega imágenes versionadas del backend mediante ECR y ECS.</p></div></li>
+          </ol>
         </div>
 
         <div class="technology-strip" aria-label="Tecnologías del proyecto">
-          <span>React</span><span>FastAPI</span><span>Python</span><span>Docker</span><span>ECS Fargate</span><span>Bedrock</span><span>RAG</span><span>Cognito</span><span>DynamoDB</span><span>Route 53</span>
+          <span>React</span><span>FastAPI</span><span>Python</span><span>Docker</span><span>CloudFront</span><span>S3</span><span>ALB</span><span>ECS Fargate</span><span>ECR</span><span>Bedrock</span><span>RAG</span><span>Cognito</span><span>DynamoDB</span><span>Route 53</span><span>GitHub Actions</span>
         </div>
       </div>
     </section>
