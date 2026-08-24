@@ -265,8 +265,23 @@ li {
         0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
+.preview img {
+    max-width: 200px;
+}
+
+.project-showcase {
+    display: flex;
+    justify-content: space-around;
+    white-space: pre-wrap;
+}
+
 /* versión móvil */
 @media (max-width: 768px) {
+
+    .project-showcase {
+        flex-wrap: wrap;
+    }
+
     .project-images {
         gap: 20px;
     }
