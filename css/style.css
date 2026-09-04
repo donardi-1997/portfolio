@@ -1147,6 +1147,102 @@ img {
   font-size: 0.78rem;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), var(--shadow);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.project-card-tagline {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.project-card > p:not(.project-card-tagline) {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.project-card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.project-card-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+.project-card-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.project-card-highlights > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.project-card-highlights i {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: var(--accent);
+  width: 1.1rem;
+  text-align: center;
+}
+
+.project-card-highlights strong {
+  color: var(--text);
+  font-size: 0.78rem;
+}
+
+.project-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .product-window {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -1997,6 +2093,7 @@ a.cert-card:hover {
   }
 
   .profile-grid,
+  .project-grid,
   .project-intro,
   .architecture-section,
   .contact-card {
@@ -2109,6 +2206,7 @@ a.cert-card:hover {
   .section-shell,
   #about-me,
   #airecruiter,
+  #projects,
   #education,
   #skills,
   #contact {
